@@ -46,14 +46,14 @@ const ClubDetail = () => {
             </div>
             <div className="middle-part">
             <div className="row align-items-center">
-            <div style={{padding:'32px'}} className="col-md-5 bg-primary">
+            <div style={{padding:'25px'}} className="col-md-5 bg-primary">
             <h1 style={{paddingLeft:'3px'}}>{strTeam}</h1>
             <h3><img style={{height:'25px', width:'25px'}} src={founded} alt=""/> Founded: {intFormedYear}</h3>
             <h6> <img style={{height:'25px', width:'25px'}}  src={country} alt=""/> Country: {strCountry}</h6>
             <h6> <img style={{height:'25px', width:'25px'}}  src={sporttype} alt=""/> Sport Type: {strSport}</h6>
             <h6> <img style={{height:'25px', width:'25px'}}  src={gender} alt=""/> Gender: {strGender}</h6>
             </div>
-            <div style={{height:'260px'}} className="col-md-7 bg-primary">
+            <div style={{height:'245px'}} className="col-md-7 bg-primary">
             <img style={{width:'420px',float:'right'}} src={cardImage} alt=""/>
             </div>
             </div>
