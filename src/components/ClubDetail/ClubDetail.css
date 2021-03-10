@@ -1,0 +1,23 @@
+.second-header{
+    height: 350px;
+    background-image: url('../../BackgroundImage/bgimage.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.second-card{
+    float: left;
+    border: 1px solid red;
+}
+.second-card-image{
+    float: right;
+}
+.club-summary{
+    height: 270px;
+    width: 420px;
+    padding-left: 2%;
+}
+.card{
+    border: 2px solid black;
+    height: 270px;
+    background-color: aquamarine;
+}

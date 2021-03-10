@@ -1,4 +1,11 @@
 .main-header{
-    height: 450px;
-    border: 1px solid red;
+    height: 350px;
+    background-image: url('../../BackgroundImage/bgimage.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.main-title{
+    color: red;
+    text-align: center;
+    padding-top: 175px;
 }
