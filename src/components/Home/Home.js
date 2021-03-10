@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ClubList from '../ClubList/ClubList';
 import Header from '../Header/Header';
-import './Home.css';
+//import './Home.css';
 const Home = () => {
 
     const [clubs,setClubs]=useState([]);
@@ -15,10 +15,12 @@ const Home = () => {
     return (
         <div>
             <Header></Header>
-            <div className="club-list">
+            <div className="row">
+
             {
                 clubs.map(club=><ClubList club={club}></ClubList>)
             }
+
             </div>
         </div>
     );

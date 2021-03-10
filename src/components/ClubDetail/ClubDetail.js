@@ -44,7 +44,7 @@ const ClubDetail = () => {
     }
     return (
         <div>
-            <div className="second-header">
+            <div className="row second-header">
             <img style={{height: '250px', padding:'75px 0px 0px 650px'}} src={strTeamBadge} alt=""/>
             </div>
             <div className="middle-part">
@@ -62,10 +62,10 @@ const ClubDetail = () => {
             </div>
             <p style={{textAlign:'justify'}}>{strDescriptionEN}</p>
             </div>
-            <div className="footer-icon">
-<a target="_blank" href={facebookLink}><img style={{height:'25px', width:'25px'}} src={facebook} alt=""/></a>
-<a target="_blank" href={twitterLink}><img style={{height:'25px', width:'25px'}} src={twitter} alt=""/></a>
-<a target="_blank" href={youtubeLink}><img style={{height:'25px', width:'25px'}} src={youtube} alt=""/></a>
+            <div className="row footer-icon">
+            <a target="_blank" href={facebookLink}><img style={{height:'25px', width:'25px'}} src={facebook} alt=""/></a>
+            <a target="_blank" href={twitterLink}><img style={{height:'25px', width:'25px'}} src={twitter} alt=""/></a>
+            <a target="_blank" href={youtubeLink}><img style={{height:'25px', width:'25px'}} src={youtube} alt=""/></a>
             </div>
         </div>
     );
