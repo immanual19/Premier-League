@@ -4,7 +4,7 @@
 3. I don't own the Design, API (used here), Images of this project. However I own the code.
 4. This project was developed for educational purpose only.
 
-#Language Used
+#Library Used
 1. This project was developed by JavaScript's frontend library called React.
 
 #Functionality
