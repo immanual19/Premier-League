@@ -29,7 +29,10 @@ const ClubDetail = () => {
     },[idTeam])
 
     console.log(club[0]);
-    const {strTeam, intFormedYear, strGender,strTeamBadge,strCountry,strDescriptionEN,strSport}=club[0];
+    const {strTeam, intFormedYear, strGender,strTeamBadge,strCountry,strDescriptionEN,strSport,strYoutube,strFacebook,strTwitter}=club[0];
+    const facebookLink='https://'+strFacebook;
+    const youtubeLink='https://'+strYoutube;
+    const twitterLink='https://'+strTwitter;
     let cardImage;
     if(strGender==='Male')
     {
@@ -60,10 +63,9 @@ const ClubDetail = () => {
             <p style={{textAlign:'justify'}}>{strDescriptionEN}</p>
             </div>
             <div className="footer-icon">
-            <a href=""></a>
-            <img style={{height:'25px', width:'25px'}} src={facebook} alt=""/>
-            <img style={{height:'25px', width:'25px'}} src={twitter} alt=""/>
-            <img style={{height:'25px', width:'25px'}} src={youtube} alt=""/>
+<a target="_blank" href={facebookLink}><img style={{height:'25px', width:'25px'}} src={facebook} alt=""/></a>
+<a target="_blank" href={twitterLink}><img style={{height:'25px', width:'25px'}} src={twitter} alt=""/></a>
+<a target="_blank" href={youtubeLink}><img style={{height:'25px', width:'25px'}} src={youtube} alt=""/></a>
             </div>
         </div>
     );
