@@ -24,7 +24,7 @@ const useStyles = makeStyles({
 const ClubList = (props) => {
    // console.log(props.club);
     const classes = useStyles();
-    const {strTeamBadge,strTeam,idTeam}=props.club;
+    const {strTeamBadge,strTeam,idTeam,strSport}=props.club;
     const history=useHistory();
     const handleClick=(idTeam)=>{
         const url=`/about/${idTeam}`;
@@ -42,7 +42,7 @@ const ClubList = (props) => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2"><div style={{textAlign: 'center'}}>{strTeam}</div></Typography>
-          <Typography gutterBottom variant="h5" component="h2"><div style={{textAlign: 'center'}}>Sports type: Football</div></Typography>
+          <Typography gutterBottom variant="h5" component="h2"><div style={{textAlign: 'center'}}>Sports type: {strSport}</div></Typography>
         </CardContent>
       </CardActionArea>
       <CardActions style={{justifyContent: 'center'}}>
