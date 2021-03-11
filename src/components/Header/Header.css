@@ -1,5 +1,5 @@
 .main-header{
-    height: 350px;
+    height: 20%;
     width: 100%;
     background-image: url('../../BackgroundImage/bgimage.jpeg');
     background-repeat: no-repeat;
@@ -8,7 +8,7 @@
 }
 .league-title{
     width: 50%;
-    height: 100%;
+    height: auto;
     display: block;
     padding-top: 1%;
     margin-left: auto;

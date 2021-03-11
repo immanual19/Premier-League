@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ClubList from '../ClubList/ClubList';
 import Header from '../Header/Header';
-//import './Home.css';
 const Home = () => {
 
     const [clubs,setClubs]=useState([]);
