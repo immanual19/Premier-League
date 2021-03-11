@@ -10,11 +10,9 @@ import gender from '../../Icon/gender.png';
 import facebook from '../../Icon/Facebook.png';
 import twitter from '../../Icon/Twitter.png';
 import youtube from '../../Icon/YouTube.png';
-  
 const ClubDetail = () => {
     const {idTeam}=useParams();
     const [club,setClub]=useState([{}]);
-    //console.log(idTeam);
     useEffect(()=>{
         const url=`https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${idTeam}`;
         fetch(url)
@@ -22,7 +20,6 @@ const ClubDetail = () => {
         .then(data=>setClub(data.teams))
     },[idTeam])
 
-  //  console.log(club[0]);
     const {strTeam, intFormedYear, strGender,strCountry,strDescriptionEN,strSport,strYoutube,strFacebook,strTwitter,strTeamBanner}=club[0];
     const facebookLink='https://'+strFacebook;
     const youtubeLink='https://'+strYoutube;
@@ -57,9 +54,9 @@ const ClubDetail = () => {
             </div>
             <p className="team-summary-card" style={{textAlign:'justify', color: 'white'}}>{strDescriptionEN}</p>
             <div className="footer-icon-div">
-            <a target="_blank" rel="noreferrer" href={facebookLink}><img className="icon" src={facebook} alt=""/></a>
-            <a target="_blank" rel="noreferrer" href={twitterLink}><img className="icon" src={twitter} alt=""/></a>
-            <a target="_blank" rel="noreferrer" href={youtubeLink}><img className="icon" src={youtube} alt=""/></a>
+            <a target="_blank" rel="noreferrer" href={facebookLink}><img className="footer-icon" src={facebook} alt=""/></a>
+            <a target="_blank" rel="noreferrer" href={twitterLink}><img className="footer-icon" src={twitter} alt=""/></a>
+            <a target="_blank" rel="noreferrer" href={youtubeLink}><img className="footer-icon" src={youtube} alt=""/></a>
             </div>
         </div>
     );

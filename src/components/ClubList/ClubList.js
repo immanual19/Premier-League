@@ -21,7 +21,6 @@ const useStyles = makeStyles({
     },
   });
 const ClubList = (props) => {
-   // console.log(props.club);
     const classes = useStyles();
     const {strTeamBadge,strTeam,idTeam,strSport}=props.club;
     const history=useHistory();
