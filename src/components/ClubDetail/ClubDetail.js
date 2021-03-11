@@ -28,8 +28,8 @@ const ClubDetail = () => {
         .then(data=>setClub(data.teams))
     },[idTeam])
 
-    console.log(club[0]);
-    const {strTeam, intFormedYear, strGender,strTeamBadge,strCountry,strDescriptionEN,strSport,strYoutube,strFacebook,strTwitter,strTeamBanner}=club[0];
+  //  console.log(club[0]);
+    const {strTeam, intFormedYear, strGender,strCountry,strDescriptionEN,strSport,strYoutube,strFacebook,strTwitter,strTeamBanner}=club[0];
     const facebookLink='https://'+strFacebook;
     const youtubeLink='https://'+strYoutube;
     const twitterLink='https://'+strTwitter;
@@ -43,29 +43,29 @@ const ClubDetail = () => {
         cardImage=female;
     }
     return (
-        <div>
-            <div className="row second-header">
-            <img style={{height: '250px', padding:'75px 0px 0px 650px'}} src={strTeamBadge} alt=""/>
+        <div style={{backgroundColor:'DarkSlateBlue'}}>
+            <div className="row">
+            <img className="club-banner" src={strTeamBanner} alt=""/>
             </div>
-            <div className="middle-part">
-            <div className="row align-items-center">
-            <div style={{padding:'25px', borderTopLeftRadius:'20px',borderBottomLeftRadius:'20px'}} className="col-md-5 bg-primary">
-            <h1 style={{paddingLeft:'3px'}}>{strTeam}</h1>
-            <h3><img style={{height:'25px', width:'25px'}} src={founded} alt=""/> Founded: {intFormedYear}</h3>
-            <h6> <img style={{height:'25px', width:'25px'}}  src={country} alt=""/> Country: {strCountry}</h6>
-            <h6> <img style={{height:'25px', width:'25px'}}  src={sporttype} alt=""/> Sport Type: {strSport}</h6>
-            <h6> <img style={{height:'25px', width:'25px'}}  src={gender} alt=""/> Gender: {strGender}</h6>
+            <div className="team-summary-card bg-primary">
+            <div className="row d-flex align-items-center">
+            <div className="col-md-5">
+            <h1>{strTeam}</h1><br/>
+            <h6><img className="icon" src={founded} alt=""/> Founded: {intFormedYear}</h6>
+            <h6> <img className="icon"  src={country} alt=""/> Country: {strCountry}</h6>
+            <h6> <img className="icon"  src={sporttype} alt=""/> Sport Type: {strSport}</h6>
+            <h6> <img className="icon"  src={gender} alt=""/> Gender: {strGender}</h6>
             </div>
-            <div style={{height:'245px', borderTopRightRadius:'20px', borderBottomRightRadius:'20px'}} className="col-md-7 bg-primary">
-            <img style={{width:'420px',float:'right'}} src={cardImage} alt=""/>
+            <div className="col-md-7">
+            <img className="card-image" src={cardImage} alt=""/>
             </div>
             </div>
-            <p style={{textAlign:'justify'}}>{strDescriptionEN}</p>
             </div>
-            <div className="row footer-icon">
-            <a target="_blank" href={facebookLink}><img style={{height:'25px', width:'25px'}} src={facebook} alt=""/></a>
-            <a target="_blank" href={twitterLink}><img style={{height:'25px', width:'25px'}} src={twitter} alt=""/></a>
-            <a target="_blank" href={youtubeLink}><img style={{height:'25px', width:'25px'}} src={youtube} alt=""/></a>
+            <p className="team-summary-card" style={{textAlign:'justify', color: 'white'}}>{strDescriptionEN}</p>
+            <div className="footer-icon-div">
+            <a target="_blank" href={facebookLink}><img className="icon" src={facebook} alt=""/></a>
+            <a target="_blank" href={twitterLink}><img className="icon" src={twitter} alt=""/></a>
+            <a target="_blank" href={youtubeLink}><img className="icon" src={youtube} alt=""/></a>
             </div>
         </div>
     );

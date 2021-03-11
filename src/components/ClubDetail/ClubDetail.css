@@ -1,12 +1,22 @@
-.second-header{
-    height: 350px;
-    background-image: url('../../BackgroundImage/bgimage.jpeg');
-    background-repeat: no-repeat;
-    background-size:cover;
+.club-banner{
+    width: 100%;
 }
-.middle-part{
-    padding: 2%;
+.team-summary-card{
+    width: 90%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
 }
-.footer-icon{
-    padding-left: 650px;
+.footer-icon-div{
+    padding-left: 45%;
+}
+.icon{
+    height: 5%;
+    width: 5%;
+}
+.card-image{
+    width: 50%;
+    height: 50%;
+    float: right;
 }

@@ -11,7 +11,6 @@ const Home = () => {
         .then(res=>res.json())
         .then(data=>setClubs(data.teams))
     },[])
-
     return (
         <div>
             <Header></Header>

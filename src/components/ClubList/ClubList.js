@@ -31,6 +31,7 @@ const ClubList = (props) => {
         history.push(url);
     }
     return (
+      <div className="team-card">
         <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
@@ -49,6 +50,7 @@ const ClubList = (props) => {
       <Router><Link to={`/about/${idTeam}`}><Button onClick={()=>handleClick(idTeam)} variant="contained" color="secondary">Explore<FontAwesomeIcon icon={faArrowRight}/></Button></Link></Router>
       </CardActions>
     </Card>
+    </div>
     );
 };
 
