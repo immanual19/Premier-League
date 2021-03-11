@@ -10,12 +10,6 @@ import gender from '../../Icon/gender.png';
 import facebook from '../../Icon/Facebook.png';
 import twitter from '../../Icon/Twitter.png';
 import youtube from '../../Icon/YouTube.png';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
   
 const ClubDetail = () => {
     const {idTeam}=useParams();
@@ -63,9 +57,9 @@ const ClubDetail = () => {
             </div>
             <p className="team-summary-card" style={{textAlign:'justify', color: 'white'}}>{strDescriptionEN}</p>
             <div className="footer-icon-div">
-            <a target="_blank" href={facebookLink}><img className="icon" src={facebook} alt=""/></a>
-            <a target="_blank" href={twitterLink}><img className="icon" src={twitter} alt=""/></a>
-            <a target="_blank" href={youtubeLink}><img className="icon" src={youtube} alt=""/></a>
+            <a target="_blank" rel="noreferrer" href={facebookLink}><img className="icon" src={facebook} alt=""/></a>
+            <a target="_blank" rel="noreferrer" href={twitterLink}><img className="icon" src={twitter} alt=""/></a>
+            <a target="_blank" rel="noreferrer" href={youtubeLink}><img className="icon" src={youtube} alt=""/></a>
             </div>
         </div>
     );

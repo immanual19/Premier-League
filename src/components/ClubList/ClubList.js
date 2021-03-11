@@ -11,8 +11,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import {
     BrowserRouter as Router,
-    Switch,
-    Route,
     Link,
     useHistory
   } from "react-router-dom";
