@@ -19,6 +19,10 @@
 .card-image{
     width: 50%;
     height: 50%;
-    float: right;
     border-radius: 10px;
 }
+@media screen and (min-width: 480px) {
+    .card-image{
+        float: right;
+    }
+  }
