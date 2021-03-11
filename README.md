@@ -1,15 +1,17 @@
-#Introduction
-1. The project is simply called English Premier League.
+# Introduction
+
+1. The project is simply called Premier League.
 2. Here you can see details of all 20 premier leauge clubs.
-3. I don't own the Design, API (used here), Images of this project. However I own the code.
+3. I don't own the idea of design, API (used here), Images of this project. However I own the code.
 4. This project was developed for educational purpose only.
 
-#Library Used
+# Library Used
+
 1. This project was developed by JavaScript's frontend library called React.
 
-#Functionality
-1. This site is not fully responsive yet.
+# Live site Link
 
-#Live site Link
-1. https://optimistic-kepler-d5c560.netlify.app/ (This link will be updated once I make further progress on this project.)
+By clicking on the link below you can see the project live. This link may be updated if I make further change(s) to this project.
+
+https://optimistic-kepler-d5c560.netlify.app/
 
